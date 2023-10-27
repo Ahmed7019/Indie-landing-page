@@ -3,5 +3,12 @@ module.exports = {
   content: ["*.{html,js}"],
   theme: {
     extend: {
-      Fontfamily:
-      '
+      Fontfamily: 
+      {
+        'dm':[ 'DM Sans',' sans-serif']
+      },
+    },
+  },
+  plugins: [],
+}
+
