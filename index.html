@@ -6,122 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>indie</title>
     <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/input.css">
 </head>
 
-<body>
+<body class="font-dm ">
     <!-- header -->
     <header>
-        <nav>
+        <div class="gradient p-6">
+            <nav>
+                <div class="flex flex-row justify-between">
+                    <img src="Assets/Logo.svg" alt="logo">
+                    <ul class="hidden sm:flex" role="list" aria-label="nav">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Get Started <span>- it's free</span> </a></li>
+                    </ul>
+                    <img src="Assets/Hamburger Menu.svg" alt="menu" class="sm:hidden">
+                </div>
+            </nav>
+            <br>
             <div>
-                <img src="Assets/Logo.svg" alt="logo">
-                <ul role="list" aria-label="nav">
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Get Started <span>- it's free</span> </a></li>
-                </ul>
+                <div> <!-- left box -->
+                    <img class="my-4 w-max" src="Assets/Feed Mockup.png " alt="mockup">
+                    <br>
+                    <h1 class="text-5xl font-bold">Your weekly personal feed digest.</h1>
+                    <p class="text-gray-600 my-6">With IndieBrew, get personal feeds from resources all around the
+                        web,including
+                        Reddit, HackerNews,
+                        IndieHackers, and much more</p>
+                    <a href="#" class="block w-fit bg-indigo-500 text-white font-semibold p-4 rounded my-8">Get Started
+                        <span class="font-normal text-sm text-gray-200">- it's free</span></a>
+                    <img src="Assets/User Avatars.svg" alt="users" class="mb-4">
+                    <p class="text-gray-600">Join <span class="text-indigo-600 font-bold">32,642 </span>IndieBrewers in
+                        curating their personal digest.</p>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <div> <!-- left box -->
-                <h1>Your weekly personal feed digest.</h1>
-                <p>With IndieBrew, get personal feeds from resources all around the web,including Reddit, HackerNews,
-                    IndieHackers, and much more</p>
-                <a href="#">Get Started <span>- it's free</span></a>
-                <img src="Assets/User Avatars.svg" alt="">
-                <p>join <span>32,642 IndieBrewers in curating their personal digest.</span></p>
-            </div>
-            <img src="Assets/Feed Mockup.png " alt="mockup">
-        </section>
-
-        <section>
-            <div>
-                <div>
-                    <h2>Curate your feed from dozens of resources.</h2>
-                    <p>We cover all major platforms where one could want to curate their feed from. Reddir, ProductHunt,
-                        IndieHackers, and so much more.</p>
-                    <a href="#">See full list of resources </a>
+        <div class="p-6">
+            <section>
+                <div class="flex flex-col">
+                    <div class="order-2 my-4">
+                        <h2 class="text-4xl font-bold my-3">Curate your feed from dozens of resources.</h2>
+                        <p class="text-gray-400 my-3">We cover all major platforms where one could want to curate their feed from. Reddir,
+                            ProductHunt,
+                            IndieHackers, and so much more.</p>
+                        <a href="#" class="text-indigo-600 font-semibold">See full list of resources </a>
+                    </div>
+                    <img src="Assets/Social Media Icons.png" alt="social media" class="order-1 my-4">
                 </div>
-                <img src="Assets/Social Media Icons.png" alt="social media">
-            </div>
-        </section>
+            </section>
+            <br>
+            <section>
+                <img src="Assets/Phone Mockup.png" alt="phone image">
+                <div>
+                    <h2>Access your feed from the comfort of your phone</h2>
+                    <p>With native apps for both iOS and Android, accessing your curated content has never been easier
+                    </p>
+                    <a href="signup.html" target="_blank">Sign up for the waitlist <i>-> font awesome arrow</i></a>
+                </div>
+            </section>
+        </div>
 
-        <section>
-            <img src="Assets/Phone Mockup.png" alt="phone image">
-            <div>
-                <h2>Access your feed from the comfort of your phone</h2>
-                <p>With native apps for both iOS and Android, accessing your curated content has never been easier</p>
-                <a href="signup.html" target="_blank">Sign up for the waitlist <i>-> font awesome arrow</i></a>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <table>
-            <thead>
-                <tr>
-                    <td>IndieBrew</td>
-                    <td>Sitemap</td>
-                    <td>Resources</td>
-                    <td>Company</td>
-                    <td>Portfolios</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <p>With IndieBrew,get personal feeds from resources all around the web, including Reddit,
-                            HackerNews, and much more</p>
-                    </td>
-                    <td>
-                        <a href="#">Homepage</a>
-                    </td>
-                    <td>
-                        <a href="#">Support</a>
-                    </td>
-                    <td>
-                        <a href="#">About</a>
-                    </td>
-                    <td>
-                        <a href="#"> HackerNews</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">Pricing</a>
-                    </td>
-                    <td>
-                        <a href="#">Contact</a>
-                    </td>
-                    <td>
-                        <a href="#">Customers</a>
-                    </td>
-                    <td>
-                        <a href="#">Reddit</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">FAQ</a>
-                    </td>
-                    <td>
-                        <a href="#">Blog</a>
-                    </td>
-                    <td>
-                        <a href="#">Twitter</a>
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>
-                        Made with love in UK.
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
+        <div class="p-6">
+            <table>
+                <thead>
+                    <tr>
+                        <td>IndieBrew</td>
+                        <td>Sitemap</td>
+                        <td>Resources</td>
+                        <td>Company</td>
+                        <td>Portfolios</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>With IndieBrew,get personal feeds from resources all around the web, including Reddit,
+                                HackerNews, and much more</p>
+                        </td>
+                        <td>
+                            <a href="#">Homepage</a>
+                        </td>
+                        <td>
+                            <a href="#">Support</a>
+                        </td>
+                        <td>
+                            <a href="#">About</a>
+                        </td>
+                        <td>
+                            <a href="#"> HackerNews</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">Pricing</a>
+                        </td>
+                        <td>
+                            <a href="#">Contact</a>
+                        </td>
+                        <td>
+                            <a href="#">Customers</a>
+                        </td>
+                        <td>
+                            <a href="#">Reddit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">FAQ</a>
+                        </td>
+                        <td>
+                            <a href="#">Blog</a>
+                        </td>
+                        <td>
+                            <a href="#">Twitter</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            Made with love in UK.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
     </footer>
 </body>
 

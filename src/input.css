@@ -1,6 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+@layer {
+  .gradient {
+    background: rgb(154, 1, 255);
+    background-position: top;
+    background-size: 50% 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(154, 1, 255, 0.17130602240896353) 0%,
+      rgba(251, 87, 176, 0.29175420168067223) 18%,
+      rgba(244, 188, 109, 0.17130602240896353) 48%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border: transparent;
+  }
+}
