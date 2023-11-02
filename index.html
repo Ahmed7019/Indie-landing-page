@@ -22,10 +22,11 @@
             <nav>
                 <div class="flex flex-row justify-between">
                     <img src="Assets/Logo.svg" alt="logo">
-                    <ul class="hidden sm:flex" role="list" aria-label="nav">
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Get Started <span>- it's free</span> </a></li>
+                    <ul class="hidden sm:flex " role="list" aria-label="nav">
+                        <li class="p-4 font-semibold"><a href="#">Pricing</a></li>
+                        <li class="p-4 font-semibold"><a href="#">Support</a></li>
+                        <li ><a href="#" class="inline-block w-fit bg-indigo-500 text-white font-semibold p-4 rounded">
+                            Get Started <span class="font-normal text-sm text-gray-200">- it's free</span> </a></li>
                     </ul>
                     <img src="Assets/Hamburger Menu.svg" alt="menu" class="sm:hidden">
                 </div>
@@ -33,7 +34,7 @@
             <br>
             <div>
                 <div> <!-- left box -->
-                    <img class="my-4 w-max" src="Assets/Feed Mockup.png " alt="mockup">
+                    <img class="relative my-4 w-max sm:w-3/5 sm:my-8 sm:mx-auto" src="Assets/Feed Mockup.png " alt="mockup">
                     <br>
                     <h1 class="text-5xl font-bold">Your weekly personal feed digest.</h1>
                     <p class="text-gray-600 my-6">With IndieBrew, get personal feeds from resources all around the
@@ -53,8 +54,8 @@
     <main>
         <div class="p-6">
             <section>
-                <div class="flex flex-col">
-                    <div class="order-2 my-4">
+                <div class="flex flex-col sm:flex-row sm:justify-between">
+                    <div class="order-2 my-4 sm:order-1">
                         <h2 class="text-4xl font-bold my-3">Curate your feed from dozens of resources.</h2>
                         <p class="text-gray-400 my-3">We cover all major platforms where one could want to curate their
                             feed from. Reddir,
@@ -63,12 +64,13 @@
                         <a href="#" class="text-indigo-600 font-semibold">See full list of resources <i
                                 class="fa-solid fa-right-long fa-xs mx-2"></i></a>
                     </div>
-                    <img src="Assets/Social Media Icons.png" alt="social media" class="order-1 my-4">
+                    <img src="Assets/Social Media Icons.png" alt="social media" class="order-1 my-4 sm:w-60 sm:object-contain sm:self-center">
                 </div>
             </section>
             <br>
             <section>
-                <img src="Assets/Phone Mockup.png" alt="phone image" class="my-8">
+                <div>
+                     <img src="Assets/Phone Mockup.png" alt="phone image" class="my-8 sm:w-52">
                 <br>
                 <div>
                     <h2 class="text-4xl font-bold my-3">Access your feed from the comfort of your phone</h2>
@@ -77,6 +79,7 @@
                     </p>
                     <a href="signup.html" class="text-indigo-600 font-semibold" target="_blank">Sign up for the waitlist
                         <i class="fa-solid fa-right-long fa-xs mx-2"></i></a>
+                </div>
                 </div>
             </section>
         </div>
