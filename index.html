@@ -25,27 +25,33 @@
                     <ul class="hidden sm:flex " role="list" aria-label="nav">
                         <li class="p-4 font-semibold"><a href="#">Pricing</a></li>
                         <li class="p-4 font-semibold"><a href="#">Support</a></li>
-                        <li ><a href="#" class="inline-block w-fit bg-indigo-500 text-white font-semibold p-4 rounded">
-                            Get Started <span class="font-normal text-sm text-gray-200">- it's free</span> </a></li>
+                        <li><a href="#" class="inline-block w-fit bg-indigo-500 text-white font-semibold p-4 rounded">
+                                Get Started <span class="font-normal text-sm text-gray-200">- it's free</span> </a></li>
                     </ul>
                     <img src="Assets/Hamburger Menu.svg" alt="menu" class="sm:hidden">
                 </div>
             </nav>
             <br>
-            <div>
-                <div> <!-- left box -->
-                    <img class="relative my-4 w-max sm:w-3/5 sm:my-8 sm:mx-auto" src="Assets/Feed Mockup.png " alt="mockup">
+            <div class="md:mt-8">
+                <div class="md:flex md:flex-row"> <!-- left box -->
+                    <img class="relative my-4 w-max sm:w-3/5 sm:my-8 sm:mx-auto md:my-0 md:w-[400px] md:order-2 object-contain"
+                        src="Assets/Feed Mockup.png " alt="mockup">
                     <br>
-                    <h1 class="text-5xl font-bold">Your weekly personal feed digest.</h1>
-                    <p class="text-gray-600 my-6">With IndieBrew, get personal feeds from resources all around the
-                        web,including
-                        Reddit, HackerNews,
-                        IndieHackers, and much more</p>
-                    <a href="#" class="block w-fit bg-indigo-500 text-white font-semibold p-4 rounded my-8">Get Started
-                        <span class="font-normal text-sm text-gray-200">- it's free</span></a>
-                    <img src="Assets/User Avatars.svg" alt="users" class="mb-4">
-                    <p class="text-gray-600">Join <span class="text-indigo-600 font-bold">32,642 </span>IndieBrewers in
-                        curating their personal digest.</p>
+                    <div class="md:w-fit">
+                        <h1 class="text-5xl font-bold">Your weekly personal feed digest.</h1>
+                        <p class="text-gray-600 my-6">With IndieBrew, get personal feeds from resources all around the
+                            web,including
+                            Reddit, HackerNews,
+                            IndieHackers, and much more</p>
+                        <a href="#" class="block w-fit bg-indigo-500 text-white font-semibold p-4 rounded my-8">Get
+                            Started
+                            <span class="font-normal text-sm text-gray-200">- it's free</span></a>
+                        <img src="Assets/User Avatars.svg" alt="users" class="mb-4">
+                        <p class="text-gray-600">Join <span class="text-indigo-600 font-bold">32,642 </span>IndieBrewers
+                            in
+                            curating their personal digest.</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -55,7 +61,7 @@
         <div class="p-6">
             <section>
                 <div class="flex flex-col sm:flex-row sm:justify-between">
-                    <div class="order-2 my-4 sm:w-5/6 p-8 sm:order-1">
+                    <div class="order-2 my-4 sm:w-5/6 sm:order-1">
                         <h2 class="text-4xl font-bold my-3">Curate your feed from dozens of resources.</h2>
                         <p class="text-gray-400 my-3">We cover all major platforms where one could want to curate their
                             feed from. Reddir,
@@ -64,22 +70,25 @@
                         <a href="#" class="text-indigo-600 font-semibold">See full list of resources <i
                                 class="fa-solid fa-right-long fa-xs mx-2"></i></a>
                     </div>
-                    <img src="Assets/Social Media Icons.png" alt="social media" class="order-1 my-4 sm:w-64 sm:my-0 sm:p-4 sm:object-contain sm:self-center">
+                    <img src="Assets/Social Media Icons.png" alt="social media"
+                        class="order-1 my-4 sm:w-64 sm:my-0 sm:p-4 sm:object-contain sm:self-center md:w-72">
                 </div>
             </section>
             <br>
             <section>
                 <div class="sm:flex sm:justify-between sm:items-start">
-                     <img src="Assets/Phone Mockup.png" alt="phone image" class="my-8 sm:my-0 sm:w-72  sm:object-contain">
-                <br>
-                <div>
-                    <h2 class="text-4xl font-bold my-3 ">Access your feed from the comfort of your phone</h2>
-                    <p class="text-gray-400 my-3 ">With native apps for both iOS and Android, accessing your curated
-                        content has never been easier
-                    </p>
-                    <a href="signup.html" class="text-indigo-600 font-semibold" target="_blank">Sign up for the waitlist
-                        <i class="fa-solid fa-right-long fa-xs mx-2"></i></a>
-                </div>
+                    <img src="Assets/Phone Mockup.png" alt="phone image"
+                        class="my-8 sm:my-0 sm:w-72  sm:object-contain md:w-[50%]">
+                    <br>
+                    <div class="w-fit md:self-center">
+                        <h2 class="text-4xl font-bold my-3 ">Access your feed from the comfort of your phone</h2>
+                        <p class="text-gray-400 my-3 ">With native apps for both iOS and Android, accessing your curated
+                            content has never been easier
+                        </p>
+                        <a href="signup.html" class="text-indigo-600 font-semibold" target="_blank">Sign up for the
+                            waitlist
+                            <i class="fa-solid fa-right-long fa-xs mx-2"></i></a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -87,8 +96,8 @@
     <br>
     <footer class="bg-gray-50">
         <div class="p-6">
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div class="col-span-2 sm:row-span-3">
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                <div class="col-span-2 sm:row-span-3 md:row-span-2">
                     <h3 class="text-xl font-bold p-2">IndieBrew</h3>
                     <p class="text-gray-500 p-2">With IndieBrew,get personal feeds from resources all around the web,
                         including Reddit,
@@ -96,7 +105,7 @@
                     <br>
                     <p class="text-gray-500 p-2">Made with <i class="fa-solid fa-heart "></i> in the UK.</p>
                 </div>
-                <ul class="col-start-1 sm:col-start-3">
+                <ul class="col-start-1 sm:col-start-3 ">
                     <h3 class="text-xl font-bold p-2">Sitemap</h3>
                     <li class="text-gray-500 p-2"><a href="#">Homepage</a></li>
                     <li class="text-gray-500 p-2"><a href="#">Pricing</a></li>
