@@ -16,4 +16,13 @@
     );
     border: transparent;
   }
+
+  .signup-gradient {
+    background: hsl(287, 100%, 92%);
+    background: linear-gradient(
+      to right,
+      rgb(254, 254, 252) 0%,
+      hsl(286, 100%, 95%) 100%
+    );
+  }
 }

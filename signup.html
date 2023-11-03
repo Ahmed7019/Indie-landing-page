@@ -6,63 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.4.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.4.2-web/css/solid.css">
 </head>
 
-<body>
+<body class="font-dm signup-gradient">
     <!-- header -->
     <header>
-        <nav>
-            <div>
-                <img src="Assets/Logo.svg" alt="logo">
+        <div class="p-6 md:p-14">
+            <nav>
+                <div class="flex justify-between">
+                    <img src="Assets/Logo.svg" alt="logo">
+                    <div class="flex items-center justify-between">
+                        <a href="index.html"><img src="Assets/Back Arrow.svg" alt="back"
+                                class="border border-gray-200 rounded p-3 shadow-sm shadow-gray-300 bg-gray-100"></a>
+                                <p class="hidden sm:block font-bold ml-4">Back to hompage</p>
+                    </div>
 
-                <a href="index.html"><img src="Assets/Back Arrow.svg" alt="back"> Back to hompage</a>
 
-            </div>
-        </nav>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <div>
-            <h2>
-                Create Your personalized feed.
-            </h2>
-            <p><span>Over 20 resources.</span>With resources ranging from Reddit to IndieHackers, we've got all your
-                needs covered.</p>
-            <p>
-                <span>Deliverd weekly.</span>
-                Every week at exactly Tuesday 12:00 P.M. EST - expect a value-packed digest right in your email.
-            </p>
-            <p>
-                <span>Unlimited ideas.</span>
-                With all the ideas you'll be reading about, what's stopping you from creating a sustainable startup?
-            </p>
-        </div>
-        <div>
-            <form method="get">
-                <h2>Create your UndieBrew Account</h2>
+        <div class="p-6 md:flex justify-between items-center md:p-14">
+            <div class="mb-6 w-[40%]">
+                <h2 class="text-3xl font-bold">
+                    Create Your personalized feed.
+                </h2>
 
-                <div>
-                    <label for="email">Email</label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="john@example.com">
-                </div>
-                <div> <label for="name">Full Name</label>
-                    <br>
-                    <input type="text" name="fullname" id="name" placeholder="John Doe">
-                </div>
-                <div>
-                    <label for="passwd">Password</label>
-                    <br>
-                    <input type="password" name="password" id="passwd" placeholder="At least 8 characters">
-                </div>
-                <div>
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox">
-                        By creating an account on IndieBrew, you agree to the <a href="#">Terms & Conditions.</a>
-                    </label>
-                </div>
-                <input type="submit" value="Create an Account">
-            </form>
+                <i class="fa-solid fa-baloon"></i>
+                <p class="mt-4 text-black"><span class="text-lg font-semibold">Over 20 resources.</span>With resources ranging from
+                    Reddit to IndieHackers, we've got all your
+                    needs covered.</p>
+                <p class="mt-4">
+                    <span class="text-lg font-semibold">Deliverd weekly.</span>
+                    Every week at exactly Tuesday 12:00 P.M. EST - expect a value-packed digest right in your email.
+                </p>
+                <p class="mt-4">
+                    <span class="text-lg font-semibold">Unlimited ideas.</span>
+                    With all the ideas you'll be reading about, what's stopping you from creating a sustainable startup?
+                </p>
+            </div>
+            <div class="w-[50%]">
+                <form method="get" class="bg-white rounded-lg p-4">
+                    <h2 class="p-1  text-2xl font-bold mb-4">Create your IndieBrew Account</h2>
+
+                    <div class="p-1">
+                        <label for="email" class="font-bold mb-4">Email</label>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="john@example.com"
+                            class=" w-full p-3 my-3 rounded border border-gray-200">
+                    </div>
+                    <div class="p-1"> <label for="name" class="font-bold mb-4">Full Name</label>
+                        <br>
+                        <input type="text" name="fullname" id="name" placeholder="John Doe"
+                            class=" w-full p-3 my-3 rounded border border-gray-200">
+                    </div>
+                    <div class="p-1">
+                        <label for="passwd" class="font-bold">Password</label>
+                        <br>
+                        <input type="password" name="password" id="passwd" placeholder="At least 8 characters"
+                            class=" w-full p-3 rounded border my-3 border-gray-200">
+                    </div>
+                    <div class="p-1 my-3">
+                        <input type="checkbox" name="checkbox" id="checkbox" class="rounded-lg">
+                        <label for="checkbox" class="w-full">
+                            By creating an account on IndieBrew, you agree to the <a href="#"
+                                class="underline decoration-indigo-700 decoration-2 font-bold text-indigo-700">Terms &
+                                Conditions.</a>
+                        </label>
+                    </div>
+                    <input type="submit" value="Create an Account"
+                        class="inline-block w-full text-center bg-indigo-500 text-white p-4 rounded">
+                </form>
+            </div>
         </div>
+
     </main>
 </body>
 
